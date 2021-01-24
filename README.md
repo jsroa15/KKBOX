@@ -1,5 +1,56 @@
 # KKBOX
 KKBOX project on Kaggle
 
-There are one notebook per dataset due to memory issues when loading the data into workspace.
-After finishing this project I will try loading data with paralell computing using Dask
+For details about the competition visit: https://www.kaggle.com/c/kkbox-churn-prediction-challenge/data
+
+# Project Overview
+
+**Objective:** The main idea of the project is to predict churn for KKBOX customers.
+
+**Data:**
+*  Transactions: Dataset with aprox 21.5 million records and features related with transactions of each customer: transaction date, end date, payment method, etc. Amount of unique records: 2.3 million recors
+*  Users: 6.7 million unique records with information about the customer (age, city, gender, etc)
+*  Logs: 30 million records with customer behavior per day (# of unique songs played, total seconds played, etc). Amount of unique records: 1.8 million recors
+*  Train: Aprox 1 million records indicating if customer has churn or renewal.
+
+## Code and Resource used:
+
+**Python Version**: 3.7
+
+**Packages**: pandas, numpy, sklearn, matplotlib, seaborn.
+
+For every dataset I followed this strategy:
+
+## **1.  Exploratoy Data Analysis (EDA)**
+
+*  Loading data
+*  Statistics of the data frame
+*  Data visualization
+*  Data Cleaning
+*  Fixing formats
+## **2.  Feature Engineering**
+
+There are 2 challenging datasets (logs and transactions) because  they have duplicated records due to their nature.
+
+For logs dataset I followed these steps:
+
+*  Create features based on the average of the original feature.
+*  Data transformations: Most of the features were skewed to the right. I used the log transformation.
+*  Outlier detection
+
+For transactions I followed these steps:
+*  Create features: Group the original dataset and for each customer create:
+    * Amount of transactions.
+    * Most frequent plan.
+    * Most frequent payment method.
+    * Revenue (sum of the amount paid for each transaction)
+    * Auto renewal (most frequent decision)
+    * Amount of cancelations (sum of cancelations for every user)
+    * Most frequent quarter of transaction (the most frequent quarter of the year when the customer makes transactions)
+*  Outlier detection
+
+After dealing with all datasets separately, I merged all datasets in one and then I applied the strategy of Exploratory Data Analysis and Feature Engineering again.
+
+## **3.  Modeling and Evaluation**
+
+*  Still working on modeling
