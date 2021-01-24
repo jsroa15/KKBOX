@@ -8,9 +8,9 @@ For details about the competition visit: https://www.kaggle.com/c/kkbox-churn-pr
 **Objective:** The main idea of the project is to predict churn for KKBOX customers.
 
 **Data:**
-*  Transactions: Dataset with aprox 21.5 million records and features related with transactions of each customer: transaction date, end date, payment method, etc. Amount of unique records: 2.3 million recors
+*  Transactions: Dataset with aprox 21.5 million records and features related with transactions of each customer: transaction date, end date, payment method, etc. Amount of unique records: 2.3 million records
 *  Users: 6.7 million unique records with information about the customer (age, city, gender, etc)
-*  Logs: 30 million records with customer behavior per day (# of unique songs played, total seconds played, etc). Amount of unique records: 1.8 million recors
+*  Logs: 30 million records with customer behavior per day (# of unique songs played, total seconds played, etc). Amount of unique records: 1.8 million records
 *  Train: Aprox 1 million records indicating if customer has churn or renewal.
 
 ## Code and Resource used:
