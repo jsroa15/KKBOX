@@ -53,8 +53,9 @@ After dealing with all datasets separately, I merged all datasets in one and the
 
 Customers with 0 and 2 years of tenure are more likely to have churn.
 
-![](tenure.png | width=10)
-![](eda.png)
+<img src= "https://github.com/jsroa15/KKBOX/blob/main/tenure.png?raw=true" width="500"/>
+
+<img src= "https://github.com/jsroa15/KKBOX/blob/main/eda.png?raw=true" width="600"/>
 
 
 ## **3.  Modeling and Evaluation**
