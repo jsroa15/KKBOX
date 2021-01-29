@@ -13,11 +13,13 @@ For details about the competition visit: https://www.kaggle.com/c/kkbox-churn-pr
 *  Logs: 30 million records with customer behavior per day (# of unique songs played, total seconds played, etc). Amount of unique records: 1.8 million records
 *  Train: Aprox 1 million records indicating if customer has churn or renewal.
 
-## Code and Resource used:
+## Code and Resources used:
 
 **Python Version**: 3.7
 
 **Packages**: pandas, numpy, sklearn, matplotlib, seaborn.
+
+**Fixing Oversampling:** https://www.youtube.com/watch?v=OJedgzdipC0
 
 For every dataset I followed this strategy:
 
@@ -60,4 +62,13 @@ Customers with 0 and 2 years of tenure are more likely to have churn.
 
 ## **3.  Modeling and Evaluation**
 
-*  Still working on modeling
+The data has a problem bacause it's unbalanced. Almost 94% of data has no churn Vs 6% with churn.To solve this I used oversampling to balance data. The resource of how to use oversampling is the Resources section of this Repo.
+
+### Baseline Model:
+**Naive Bayes Classifier**
+| ROC AUC Score | Accuracy | F1 Score | Precision | Recall |
+|---------------|----------|----------|-----------|--------|
+| 79.68         | 79.04    | 28.95    | 18.54     | 66     |
+
+
+
