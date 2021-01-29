@@ -51,6 +51,10 @@ For transactions I followed these steps:
 
 After dealing with all datasets separately, I merged all datasets in one and then I applied the strategy of Exploratory Data Analysis and Feature Engineering again.
 
+I found that customers with 0 and 2 years of tenure are more likely to have churn.
+
+
+
 ## **3.  Modeling and Evaluation**
 
 *  Still working on modeling
