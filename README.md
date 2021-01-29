@@ -66,9 +66,30 @@ The data has a problem bacause it's unbalanced. Almost 94% of data has no churn 
 
 ### Baseline Model:
 **Naive Bayes Classifier**
-| ROC AUC Score | Accuracy | F1 Score | Precision | Recall |
-|---------------|----------|----------|-----------|--------|
-| 79.68         | 79.04    | 28.95    | 18.54     | 66     |
+| ROC AUC Score | Accuracy | F1 Score |
+|---------------|----------|----------|
+| 79.68         | 79.04    | 28.95    |
+
+I  will use the ROC AUC score as final metric to evaluate model performance..
+
+### Robust Models
+I used robust models to predict churn: Decision Tree, XGBoost, and Random Forest. Here are the results for each model.
+
+|               | ROC AUC CV | ROC AUC Test |
+|---------------|------------|--------------|
+| Decision Tree | 97.41      | 69.22        |
+| Xgboost       | 92.65      | 92.77        |
+| Random Forest | 99.98      | 94.01        |
+
+Random Forest is the best model to predict customer churn with a really good ROC AUC score.
+
+### Feature Importance
+
+<img src= "https://github.com/jsroa15/KKBOX/blob/main/images/Screenshot%202021-01-29%20143629.png" width="500"/>
+
+From the above, the features that have most predictive power are:       ```regist_cancels  is_auto_renew  regist_trans  revenue tenure```
+
+
 
 
 
