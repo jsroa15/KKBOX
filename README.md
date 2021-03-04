@@ -89,6 +89,10 @@ Random Forest is the best model to predict customer churn with a really good ROC
 
 From the above, the features that have most predictive power are:       ```regist_cancels  is_auto_renew  regist_trans  revenue tenure```
 
+# Implementation
+
+For this project I used Streamlit to deploy a Web App
+
 
 
 
