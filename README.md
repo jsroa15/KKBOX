@@ -17,7 +17,7 @@ For details about the competition visit: https://www.kaggle.com/c/kkbox-churn-pr
 
 **Python Version**: 3.7
 
-**Packages**: pandas, numpy, sklearn, matplotlib, seaborn.
+**Packages**: pandas, numpy, sklearn, matplotlib, seaborn, streamlit
 
 **Fixing Oversampling:** https://www.youtube.com/watch?v=OJedgzdipC0
 
@@ -89,9 +89,13 @@ Random Forest is the best model to predict customer churn with a really good ROC
 
 From the above, the features that have most predictive power are:       ```regist_cancels  is_auto_renew  regist_trans  revenue tenure```
 
-# Implementation
+# Deployment
 
 For this project I used Streamlit to deploy a Web App
+
+<img src= "https://github.com/jsroa15/KKBOX/blob/main/images/Screenshot%202021-03-04%20122428.jpg" width="500"/>
+
+
 
 
 
